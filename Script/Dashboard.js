@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentSlide);
 });
 
-let currentIndex = 0;
+let currentIndex22 = 0;
 const visibleItems = 3; 
 const autoScrollInterval = 2000;
 
@@ -30,7 +30,7 @@ function updateCarousel() {
   const items = document.querySelectorAll('.carousel-item');
   const itemWidth = items[0].clientWidth;
 
-  carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+  carousel.style.transform = `translateX(-${currentIndex22 * itemWidth}px)`;
 }
 
 function moveSlide(direction) {
@@ -39,15 +39,15 @@ function moveSlide(direction) {
   const totalItems = items.length;
 
   if (direction === -1) {
-    currentIndex--;
+    currentIndex22--;
   } else {
-    currentIndex++;
+    currentIndex22++;
   }
 
-  if (currentIndex >= totalItems - visibleItems + 1) {
-    currentIndex = 0;
-  } else if (currentIndex < 0) {
-    currentIndex = totalItems - visibleItems;
+  if (currentIndex22 >= totalItems - visibleItems + 1) {
+    currentIndex22 = 0;
+  } else if (currentIndex22 < 0) {
+    currentIndex22 = totalItems - visibleItems;
   }
 
   updateCarousel();
