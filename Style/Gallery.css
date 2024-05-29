@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+.header {
+    margin: 0%;
+    background-image: url("../asset/Gallery\ Header.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 594px;
+}
+
+.logo-img {
+    width: 200px;
+    height: 45px;
+    padding-top: 0px;
+}
+
+.nav-tab {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.left-header {
+    padding-left: 90px;
+}
+
+#right-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation {
+    padding-right: 60px;
+    font-weight: bold;
+}
+
+.menu-icon {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+.header-text {
+    margin-left: 230px;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 150;
+    font-size: calc(20.66667px + 3.06667vw);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 20px 30px;
+    display: block;
+    text-decoration: none;
+}
+
+.show {
+    display: block;
+}
+
+.menu {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.dropbtn {
+    background: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+
+.gallery-page{
+    border-bottom: 2px solid #fff;
+}
+
+
+.main-content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery-photos {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-cards-text {
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 140%;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+}
+
+
+
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    background-color: #161f1e;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.footer-section {
+    margin-top: 145px;
+}
+
+.footer-logo {
+    width: 48px;
+    height: 48px;
+    margin-left: 220px;
+    margin-bottom: 220px;
+}
+
+.footer-tag {
+    margin-left: 220px;
+    margin-bottom: 90px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #fff;
+}
+
+.footer-list {
+    padding-left: 0px;
+}
+
+.footer-links {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
