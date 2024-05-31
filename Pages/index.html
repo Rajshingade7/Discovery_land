@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Style/indes.css">
+</head>
+
+<body>
+    <input id="userInput">
+    <button onclick="displayText()">Button</button>
+    <script>
+        function displayText() {
+            var inputText = document.getElementById("userInput").value;
+            var outputDiv = document.getElementById("print");
+            var textNode = document.createElement("p");
+            textNode.textContent = inputText;
+            if (inputText.trim().charAt(0).toLowerCase() === 'r') {
+                textNode.classList.add("red-text");
+            }
+            outputDiv.appendChild(textNode);
+        }
+    </script>
+    <div id="print">
+    </div>
+
+</body>
+
+</html>
